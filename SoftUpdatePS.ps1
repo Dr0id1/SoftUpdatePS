@@ -1,4 +1,4 @@
-﻿# SoftUpdatePS V2.2
+﻿# SoftUpdatePS V3.1
 # Script.ps1
 #
 $pshost = get-host
@@ -17,3 +17,6 @@ Invoke-WebRequest "http://devbuilds.kaspersky-labs.com/devbuilds/KVRT/latest/ful
 Invoke-WebRequest "https://download.adlice.com/api/?action=download&app=roguekiller&type=x64" -OutFile RogueKiller64.exe
 Invoke-WebRequest "https://download.adlice.com/api/?action=download&app=roguekiller&type=x86" -OutFile RogueKiller32.exe
 Invoke-WebRequest "https://download.toolslib.net/download/direct/1/latest?channel=release" -OutFile AdwCleaner.exe
+cls
+powercfg -change -monitor-timeout-ac 0
+powercfg -x -standby-timeout-ac 0
