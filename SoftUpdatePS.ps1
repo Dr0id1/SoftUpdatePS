@@ -1,4 +1,4 @@
-﻿#
+﻿# SoftUpdatePS V2.2
 # Script.ps1
 #
 $pshost = get-host
